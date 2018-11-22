@@ -1,0 +1,78 @@
+{
+  "antd/dist/antd.min.css": [
+    {
+      "id": "./node_modules/antd/dist/antd.min.css",
+      "name": "./node_modules/antd/dist/antd.min.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "undefined": [
+    {
+      "id": 2,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 3,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 4,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 6,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 10,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./assets/css/index.less": [
+    {
+      "id": "./pages/assets/css/index.less",
+      "name": "./pages/assets/css/index.less",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./less/index.less": [
+    {
+      "id": "./pages/components/index-loading/less/index.less",
+      "name": "./pages/components/index-loading/less/index.less",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": "./pages/components/error/less/index.less",
+      "name": "./pages/components/error/less/index.less",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": "./pages/projects/pay.blinkpaycard.com/views/success/less/index.less",
+      "name": "./pages/projects/pay.blinkpaycard.com/views/success/less/index.less",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./noop": [
+    {
+      "id": "./node_modules/next/dist/client/noop.js",
+      "name": "./node_modules/next/dist/client/noop.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    }
+  ]
+}

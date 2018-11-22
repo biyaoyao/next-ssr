@@ -1,0 +1,331 @@
+@import './reset/index';
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src: url('../font/PingFangSCRegular.ttf') format('truetype'), url('../font/PingFangSCRegular.ttf') format('embedded-opentype'), url('../font/PingFangSCRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PingFang-SC-Regular';
+  src: url('../font/PingFang-SC-Regular.otf') format('truetype'), url('../font/PingFang-SC-Regular.otf') format('embedded-opentype'), url('../font/PingFang-SC-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PingFang-SC-Semibold';
+  src: url('../font/PingFang-SC-Semibold.ttf') format('truetype'), url('../font/PingFang-SC-Semibold.ttf') format('embedded-opentype'), url('../font/PingFang-SC-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PingFang-SC-Bold';
+  src: url('../font/PingFang-SC-Bold.ttf') format('truetype'), url('../font/PingFang-SC-Bold.ttf') format('embedded-opentype'), url('../font/PingFang-SC-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+:global {
+  
+  /*初始化样式*/
+  body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    font-size: 100px!important;
+    font-family: PingFangSC-Regular;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+  }
+  @media screen and (max-width: 1600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    html, body {
+      font-size: 90px;
+    }
+  }
+  @media screen and (max-width: 1400px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    html, body {
+      font-size: 80px;
+    }
+  }
+  @media screen and (max-width: 1300px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    html, body {
+      font-size: 76px;
+    }
+  }
+  @media screen and (max-width: 1200px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    html, body {
+      font-size: 70px;
+    }
+  }
+  body, button, input, select, textarea {
+    font-size: 0.12rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+  }
+
+  address, cite, dfn, em, var {
+    font-style: normal;
+  }
+
+  code, kbd, pre, samp {
+    font-family: couriernew, courier, monospace;
+  }
+
+  small {
+    font-size: 0.12rem;
+  }
+
+  div {
+    box-sizing: border-box;
+  }
+
+  ul, ol {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  sup {
+    vertical-align: text-top;
+  }
+
+  sub {
+    vertical-align: text-bottom;
+  }
+
+  legend {
+    color: #000;
+  }
+
+  fieldset, img {
+    border: 0;
+  }
+
+  button, input, select, textarea {
+    font-size: 100%;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /*flex 相关*/
+
+  .flex {
+    display: flex;
+    &.flex-column {
+      flex-direction: column;
+    }
+    &.flex-row {
+      flex-direction: row;
+    }
+    &.flex-center {
+      align-items: center;
+      justify-content: center;
+    }
+    &.flex-align-center {
+      align-items: center;
+    }
+    &.flex-content-center {
+      justify-content: center;
+    }
+    .flex-1 {
+      flex: 1;
+    }
+    .flex-2 {
+      flex: 2;
+    }
+    .flex-3 {
+      flex: 3;
+    }
+    .flex-4 {
+      flex: 4;
+    }
+  }
+
+  /*结构样式*/
+  #_next {
+    height: 100%;
+    min-width: 1200px;
+    .center{
+      max-width: 1600px;
+      margin: auto;
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .App {
+      height: 100%;
+      overflow: auto;
+      min-width: 1200px;
+      background: #F6F7F8;
+      .switch-wrapper {
+        position: relative;
+      }
+      .main-content {
+        min-width: 1150px;
+        max-width: 1600px;
+        margin: auto;
+        min-height: 100%;
+        width: ~'calc(100% - 300px)';
+        .flex;
+        .flex-row;
+        .right-content {
+          flex: 1;
+          .flex;
+          .flex-column;
+        }
+         .container-header {
+          height: .8rem;
+          background: rgba(255, 255, 255, 1);
+          border-radius: .04rem;
+          box-shadow: 0px 0px .07rem 1px rgba(24, 26, 29, 0.06);
+          padding: 0 .3rem;
+          .name {
+              font-size: .20rem;
+              color: #191919;
+          }
+          .divide {
+              padding: 0 .1rem;
+              font-size: .2rem;
+              color: #565555;
+          }
+          .value {
+              color: #565555;
+              font-size: .14rem;
+              &.important {
+                  color: #1FAAEF;
+                  font-size: .18rem;
+              }
+
+              &a{
+               & :hover{
+                  text-decoration: underline;
+                }
+              }
+          }
+      }
+      .notes {
+          padding: 0 .3rem;
+          min-height: .4rem;
+          background: rgba(255, 255, 255, 1);
+          border-radius: 4px;
+          line-height: 0.4rem;
+          box-shadow: 0px 0px 7px 1px rgba(24, 26, 29, 0.06);
+          font-size: .14rem;
+          color: #565555;
+          .important {
+              color: #373737;
+              font-weight: bold
+          }
+      }
+      .search-box {
+          padding: 0 0.2rem .2rem 0;
+          .ant-row {
+              width: auto;
+          }
+      }
+      .data-list {
+          margin-top: .1rem;
+          background: #fff;
+          padding: .3rem .2rem;
+          .ant-table-body {
+              border: 1px solid #E0E2E9;
+              border-bottom: 0;
+              .ant-table-thead>tr>th {
+                  background: #fff;
+                  border-bottom: 1px solid #E0E2E9;
+                  height: .75rem;
+              }
+              .ant-table-expanded-row{
+                background: #F6F7F8;
+                p{
+                  height: .7rem;
+                  line-height: .7rem;
+                   border-bottom: 1px solid #e0e2e9;
+                   margin: 0;
+                   color:#191919;
+                   font-size: .16rem;
+                   &:last-child{
+                     border-bottom: 0;
+                   }
+                }
+              }
+              .ant-table-tbody>tr>td {
+                  padding: .12rem;
+                  height: .7rem;
+                  .ant-input {
+                      outline: none;
+                  }
+                  .ant-input-group-addon {
+                      background-color: #68CEFC;
+                      color: #fff;
+                      font-size: .18rem; // &:hover{
+                      //     background: #51a4ca;
+                      // }
+                  }
+                  .download+.ant-input-group-addon {
+                      background-color: #adf179;
+                      cursor: pointer;
+                      &:hover {
+                          background: #22AC38;
+                      }
+                  }
+                  a {
+                      color: #1FAAEF;
+                  }
+              }
+          }
+          .ant-pagination {
+              text-align: center;
+              margin-top: 20px;
+          }
+      }
+
+      }
+      .switch-wrapper > div {
+        position: absolute;
+      }
+
+      .flex;
+      .flex-column;
+      .footer {
+        .flex;
+        .flex-center;
+        height: 0.4rem;
+        content: "";
+      }
+      .text-right{
+        text-align: right;
+      }
+    }
+  }
+
+
+  .modal-content {
+    .modal-from {
+      &:last-child {
+        padding-top: .2rem;
+        .modal-from-body {
+          border-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+      .modal-from-title {
+        padding-left: .12rem;
+        font-size: .18rem;
+      }
+      .modal-from-body {
+        border-bottom: 1px solid #d9d9d9;
+        padding: .2rem 0;
+      }
+    }
+  }
+
+}

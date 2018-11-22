@@ -1,0 +1,112 @@
+.loginApp {
+    position: relative;
+    width: 100%;
+    min-width: 1000px;
+    height: 100vh;
+    .logoBox {
+        width: 80%;
+        max-width: 1248px;
+        min-width: 800px;
+        .logo {
+            height: 80px;
+            color: #fff;
+            margin-top: 20px;
+            text-align: left;
+            img {
+                width: 42px;
+                &.logo-text {
+                    width: 167px;
+                    margin-left: 12px;
+                }
+            }
+            justify-content: flex-start;
+        }
+    }
+    .intruduction {
+        width: 80%;
+        max-width: 1248px;
+        min-width: 800px;
+        font-size: .2rem;
+        padding-bottom: .2rem;
+        margin-top: .2rem;
+    }
+    .loginBox {
+        box-shadow: 0px 0px 26px 6px rgba(24, 26, 29, 0.08);
+        background: #fff;
+        width: 80%;
+        height: 75%;
+        min-height: 400px;
+        min-width: 800px;
+        border-radius: 6px;
+        max-width: 1248px;
+        min-width: 800px;
+        max-height: 700px;
+        .loginItem {
+            text-align: center;
+            padding: 3px 0;
+            max-width: 6.8rem;
+            margin: auto;
+            min-height: 30px;
+            &.input-box {
+                padding: 10px 0;
+            }
+            :global {
+                .ant-input {
+                    height: .6rem;
+                    font-size: .20rem;
+                    .ant-input-prefix {
+                        i {}
+                        font-size: 18px;
+                    }
+                }
+                .ant-form-explain {
+                    text-align: left;
+                    color: #E42E2E;
+                    font-size: .18rem;
+                    padding-right: .1rem;
+                }
+                .ant-input-suffix {
+                    content: "";
+                    cursor: pointer;
+                    &:hover {
+                        color: #e9373b;
+                    }
+                }
+            }
+            &.title {
+                color: #1F1F1F;
+                font-size: 26px;
+                height: 130px;
+                padding-top: 60px;
+            }
+            &.sub-title {
+                color: #35BDF9;
+                font-size: 18px;
+                height: 18px;
+                font-weight: bold;
+            }
+            &.tips {
+                color: #E9373B;
+                font-size: .2rem;
+                height: .36rem;
+                ;
+            }
+            &.link-box {
+                justify-content: flex-end;
+                .link {
+                    color: #68cbf7;
+                }
+            }
+            &.submit {
+                :global {
+                    .ant-btn {
+                        height: .6rem;
+                        border: 1px solid #68cbf7;
+                        background: #68cbf7;
+                        font-size: .20rem;
+                    }
+                }
+            }
+        }
+    }
+}
